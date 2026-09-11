@@ -5,6 +5,19 @@
 
 @import 'tailwindcss';
 
+:root {
+  --font-persian-stack: var(--font-arabic), 'Vazirmatn', 'Noto Sans Arabic',
+    system-ui, sans-serif;
+}
+
+.font-persian {
+  font-family: var(--font-persian-stack);
+}
+
+html[lang='fa'] body {
+  font-variant-numeric: proportional-nums;
+}
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -2564,4 +2577,3 @@
   min-height: 200px;
   display: block;
 }
-

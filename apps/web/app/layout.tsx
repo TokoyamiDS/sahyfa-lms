@@ -57,7 +57,7 @@ export default function RootLayout({
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script src="/embed-bg.js" />
       </head>
-      <body suppressHydrationWarning>
+      <body suppressHydrationWarning className="font-persian">
         <Providers>
           <main className="animate-fade-in">
             {children}
