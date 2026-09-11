@@ -16,6 +16,7 @@ from src.routers import nudges as nudges_router_module
 from src.routers import stream
 from src.routers import api_tokens
 from src.routers import webhooks
+from src.routers import sahyfa_payments
 from src.routers.integrations import zapier as zapier_integration
 from src.routers.ai import ai, magicblocks, courseplanning, rag, images, quiz, assignment_gen, scenario, audio
 from src.routers.boards import boards_playground
@@ -121,6 +122,7 @@ v1_router.include_router(
     tags=["webhooks"],
     dependencies=[Depends(require_authenticated_user), Depends(require_plan("pro", "Webhooks"))]
 )
+v1_router.include_router(sahyfa_payments.router)
 v1_router.include_router(
     zapier_integration.router,
     prefix="/integrations/zapier",
