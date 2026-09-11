@@ -23,7 +23,6 @@ Sahyfa-specific changes belong in these areas:
 - `apps/web`: Persian RTL layout, fonts, Jalali dates, and Sahyfa branding.
 - `apps/api/src`: ZarinPal/Jibit payment adapters, SMS adapters, and migration endpoints.
 - `apps/api/migrations`: Sahyfa-owned schema changes only.
-- `apps/collab`: LiveKit is a separate realtime media service; Hocuspocus remains for editing.
 - `scripts/sahyfa`: repeatable WordPress/Tutor LMS extraction and LearnHouse import tooling.
 
 Do not modify upstream behavior for one-off migration logic. Keep import transforms and
@@ -49,5 +48,4 @@ The local development database intentionally uses PostgreSQL with `pgvector`, no
 3. Build a read-only WordPress/Tutor extractor and ID mapping tables.
 4. Import one representative course, then all courses, activities, users, and enrollments.
 5. Add ZarinPal/Jibit payment adapters and access-grant workflows.
-6. Add LiveKit live sessions, attendance, and course events.
-7. Run parallel QA and cut over after payment and enrollment parity is verified.
+6. Run parallel QA and cut over after payment and enrollment parity is verified.
