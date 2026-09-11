@@ -4,7 +4,15 @@
   </a>
 </p>
 
-<h3 align="center">The next-gen open-source platform for world-class educational content.</h3>
+<h3 align="center">Sahyfa LMS: a Persian, RTL-first LearnHouse fork.</h3>
+
+This repository is the Sahyfa fork of LearnHouse. It keeps the upstream React/Next.js
+frontend and FastAPI/PostgreSQL LMS core while adding the migration path for Sahyfa's
+Tutor LMS data, Persian RTL support, Iranian payments, SMS integrations, and live classes.
+
+See [`docs/SAHYFA_ARCHITECTURE.md`](docs/SAHYFA_ARCHITECTURE.md) for the fork boundaries
+and [`docker-compose.sahyfa.dev.yml`](docker-compose.sahyfa.dev.yml) for the local dependency
+stack.
 
 <p align="center">
   <a href="https://github.com/learnhouse/learnhouse/blob/main/LICENSE"><img src="https://img.shields.io/github/license/learnhouse/learnhouse?style=flat&color=blue" alt="License" /></a>
